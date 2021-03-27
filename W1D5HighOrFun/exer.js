@@ -30,6 +30,7 @@ console.log(a.sort((a,b)=>{
 //arr.reduce((prevValue, item, index, array)=>{},[initial])
 let arry = [1, 2, 3, 4, 5];
 let prod = arry.reduce((preValue, item)=>{
+    console.log(preValue, item)
     return preValue*= item;
 },1)
 console.log(prod)
@@ -37,4 +38,6 @@ console.log(prod)
 let maxArr = arry.reduce((max, curr)=>{
     return Math.max(max, curr);
 },-Infinity)
-console.log(maxArr)
+//console.log(maxArr)
+
+// arr.reduce(prevValue, ele), 0)
