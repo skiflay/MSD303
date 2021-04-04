@@ -12,7 +12,7 @@ The bank object should have a transactionsDB property, which will be an array of
 */
 
 const bank = {
-    transactionsDB: [],
+    transactionsDB: []
 };
 bank.transactionsDB = [
     { customerId: 1, customerTransactions: [10, 50, -40] },
