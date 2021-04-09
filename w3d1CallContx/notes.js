@@ -1,5 +1,14 @@
 "use strict";
 
+// What is context stack vs call stack vs lexical environment and their r/ship?
+/*context stack and call stack are, "essentially", the same thing. 
+The call stack holds the execution contexts for the function calls. 
+It is a stack of execution contexts. Every function call has its execution context
+--the local variables and a reference to it's lexical environment and 
+some record of the line of code it is currently executing (in case there is a function call).
+*/
+
+
 function a() {
     console.log(this);
 }
@@ -17,7 +26,7 @@ let mylog = b.log
 mylog();
 
 /* sloppy	global
-global	globa
+global	global
 global 	undefined
 b	b ==> bcz method
 global undefined  ==> bcz function
